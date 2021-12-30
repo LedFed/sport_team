@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -491,7 +492,7 @@ input::placeholder {
 .content {
   margin: 0 24px;
   margin-top: 30px;
-  background-color: #e5e5e5;
+  background-color: #dedede;
 }
 
 .content .content_block {
@@ -603,7 +604,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     margin: 20px;
-    height: 90vh;
+    height: 85vh;
   }
   .content .content_block {
     padding: 20px 0;
@@ -621,5 +622,32 @@ input::placeholder {
     margin-top: 8px;
     margin-bottom: 16px;
   }
+}
+
+/* Dots Слайдер*/
+.slick-dots li {
+  height: 2px;
+  width: 40px;
+  margin: 0 4px;
+}
+
+.slick-dots li button {
+  height: 2px;
+  width: 40px;
+  padding: 0;
+}
+
+.slick-dots li button::before {
+  display: block;
+  height: 2px;
+  width: 40px;
+  content: '';
+  background: #EAEAEB;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  background: #393939;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,4 +15,19 @@ $(document).ready(function(){
     // $(this).toggleClass("table");
     $("nav").toggleClass("table");
 });
+  $("[data-slider]").slick({
+    isFinite:false,
+    fade:false,
+    slideToShow:1,
+    slideToScroll:1,
+    arrows:false,
+    dots:true,
+    autoplay:true,
+    autoplaySpeed:5000
+  });
+  $("[data-slid]").slick({
+    arrows:false,
+    dots:true,
+  })
 });
+
