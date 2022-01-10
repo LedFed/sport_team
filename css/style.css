@@ -1234,7 +1234,7 @@ input::placeholder {
     border-bottom: 1px solid #F2F2F2;
   }
   .footer_top .footer_contents .footer_title::after {
-    content: url(/img/icons/arrow_right.svg);
+    content: url(../img/icons/arrow_right.svg);
     display: block;
     transform: rotate(270deg);
     position: absolute;
