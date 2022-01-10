@@ -7,6 +7,10 @@ $(document).ready(function(){
     //    $('.header_search').blur(function(){$(".wrap, .search").RemoveClass("active");});
     // }
   });
+
+  $(".favorite_btn").click(function(){
+    $(this).toggleClass("active");
+  });
   // $(".menu").click(function(){
   //   $("nav").toggleClass("table");
   // });
@@ -29,5 +33,13 @@ $(document).ready(function(){
     arrows:false,
     dots:true,
   })
+  $("[data-collapse]").on("click", function(event){
+    event.preventDefault();
+    var $this =  $(this),
+      blockid = $this.data('collapse'); 
+      $(this).toggleClass("active");
+      console.log(this);
+    $(blockid).slideToggle(500);    
+});
 });
 
