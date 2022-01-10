@@ -1137,7 +1137,7 @@ input::placeholder {
 }
 
 .footer_top .footer_search form::before {
-  content: url(/img/icons/arrow.svg);
+  content: url(../img/icons/arrow.svg);
   position: absolute;
   top: 50%;
   right: 16px;
