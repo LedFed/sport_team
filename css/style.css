@@ -1220,7 +1220,10 @@ input::placeholder {
   }
   .footer_top .footer_contents .footer_list.active {
     padding-bottom: 12px;
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid transparent;
+  }
+  .footer_top .footer_contents .footer_list.active .footer_title {
+    border-bottom: 1px solid transparent;
   }
   .footer_top .footer_contents .footer_list.active .footer_title::after {
     transform: rotate(90deg);
@@ -1228,6 +1231,7 @@ input::placeholder {
   .footer_top .footer_contents .footer_title {
     position: relative;
     padding-bottom: 12px;
+    border-bottom: 1px solid #F2F2F2;
   }
   .footer_top .footer_contents .footer_title::after {
     content: url(/img/icons/arrow_right.svg);
@@ -1236,6 +1240,9 @@ input::placeholder {
     position: absolute;
     right: 0px;
     top: 0;
+  }
+  .footer_top .footer_contents .accordion {
+    display: none;
   }
   .footer_bottom {
     position: relative;
