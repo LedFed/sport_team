@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateCartProduct = (img, title, price, id) => {
 		return `			
             <aricle class="productik" data-id="${id}">
-                <a href="#" class="product_link">
+                <div  href="#" class="product_link">
                     <div class="product_img">
                         <img src="${img}" alt="creatine">
                     </div>
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>       
                         </div>
                     </div>
-                </a>
+                </div >
             </aricle>
 		`;
 	};
